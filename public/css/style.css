@@ -15,8 +15,6 @@ main {
 
 .navbar-fixed { z-index: 9999; }
 
-.nav-wrapper { margin: 0 10px; }
-
 .help-block > strong {
 	color: #F44336;
 }

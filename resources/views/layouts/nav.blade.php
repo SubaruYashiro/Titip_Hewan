@@ -1,7 +1,7 @@
 <div class="navbar-fixed">
 	<nav class="pink lighten-2">
 		<div class="nav-wrapper">
-			<a href="{{ route('index') }}" class="brand-logo">{{ config('app.name', 'Laravel') }}</a>
+			<a href="{{ route('index') }}" class="brand-logo center">{{ config('app.name', 'Laravel') }}</a>
 			<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
 			
 			<ul id="nav-mobile" class="right hide-on-med-and-down">
@@ -17,7 +17,7 @@
 					@if(Request::is('admin/*'))
 						<li><a href="{{ route('admin.login') }}" class="waves-effect waves-light btn blue darken-1">Login</a></li>
 					@else
-					<li><a href="{{ route('login') }}" class="waves-effect waves-light btn blue darken-1">Login</a></li>
+						<li><a href="{{ route('login') }}" class="waves-effect waves-light btn blue darken-1">Login</a></li>
 					@endif
 				@endif
 			</ul>
@@ -34,7 +34,7 @@
 					@if(Request::is('admin/*'))
 						<li><a href="{{ route('admin.login') }}" class="waves-effect waves-light btn blue darken-1">Login</a></li>
 					@else
-					<li><a href="{{ route('login') }}" class="waves-effect waves-light btn blue darken-1">Login</a></li>
+						<li><a href="{{ route('login') }}" class="waves-effect waves-light btn blue darken-1">Login</a></li>
 					@endif
 				@endif
 			</ul>
