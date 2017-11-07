@@ -21,12 +21,16 @@
 </head>
 <body>
     @include('layouts.nav')
-    <main>
-        @yield('content')
-    </main>
+    @yield('content')
+    <main></main>
     </div>
     @include('layouts.footer')
     <!-- Scripts -->
     <script src="{{ asset('js/materialize.min.js') }}"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(".button-collapse").sideNav();
+        });
+    </script>
 </body>
 </html>

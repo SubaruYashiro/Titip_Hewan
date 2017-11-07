@@ -5,10 +5,11 @@
     <div class="row"> 
         <div class="col m6 offset-m3">
             <div class="card">
-                <div class="card-content margin-top-25">
+                <div class="card-content">
                     <span class="card-title center">Admin Login</span>
+                    <div class="divider"></div>
                     <div class="row">
-                        <form class="form-horizontal" method="POST" action="{{ route('admin.login') }}">
+                        <form method="POST" action="{{ route('admin.login') }}">
                             {{ csrf_field() }}
                             <div class="input-field col s12">
                                 <input id="email" type="email" class="validate{{ $errors->has('email') ? ' invalid' : '' }}" name="email" value="{{ old('email') }}" required autofocus>
@@ -35,7 +36,7 @@
                                 <label for="test5">Remember Me</label>
                             </div>
 
-                            <div class="col s12 margin-top-add-little">
+                            <div class="col s12 button">
                                 <button type="submit" class="btn waves-effect waves-light btn light-blue darken-1">
                                     Login
                                 </button>

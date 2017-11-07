@@ -6,7 +6,7 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-    color: #777;
+    /*color: #777;*/
 }
 
 main {
@@ -19,12 +19,12 @@ main {
 	color: #F44336;
 }
 
-.margin-top-add-little {
+.button {
 	margin-top: 1rem;
 }
 
-.margin-top-25 {
-	margin-top: 25%;
+.form {
+	margin-top: 5rem;
 }
 
 .footer-link {
@@ -33,4 +33,37 @@ main {
 
 .footer-link > i {
 	font-size: 24px !important;
+}
+
+.fw100 {
+	font-weight: 100;
+}
+
+.fw200 {
+	font-weight: 200;
+}
+
+.fw300 {
+	font-weight: 300;
+}
+
+.fw400 {
+	font-weight: 400;
+}
+
+.fw500 {
+	font-weight: 500;
+}
+
+.no-left {
+	padding-left: 0 !important;
+}
+
+.no-right {
+	padding-right: 0 !important;
+}
+
+.no-both {
+	padding-left: 0 !important;
+	padding-right: 0 !important;
 }

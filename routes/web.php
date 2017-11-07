@@ -13,12 +13,11 @@
 
 Auth::routes();
 
+Route::get('/', 'GuestController@index')->name('index');
+Route::get('about', 'GuestController@about')->name('about');
 
 Route::get('logout', 'Auth\LoginController@userLogout')->name('logout');
 Route::post('logout', 'Auth\LoginController@logout');
-
-Route::get('/', 'GuestController@index')->name('index');
-Route::get('about', 'GuestController@about')->name('about');
 
 Route::group(['prefix' => 'admin'], function() {
 	Route::get('login', 'Auth\AdminLoginController@showLoginForm')->name('admin.login');
