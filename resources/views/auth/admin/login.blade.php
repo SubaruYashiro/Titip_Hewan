@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row"> 
         <div class="col m6 offset-m3">
-            <div class="card">
+            <div class="card login">
                 <div class="card-content">
                     <span class="card-title center">Admin Login</span>
                     <div class="divider"></div>
@@ -40,9 +40,6 @@
                                 <button type="submit" class="btn waves-effect waves-light btn light-blue darken-1">
                                     Login
                                 </button>
-                                <a href="{{ route('password.request') }}">
-                                    Forgot Your Password?
-                                </a>
                             </div>
                         </form>
                     </div>

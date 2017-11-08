@@ -23,8 +23,8 @@ main {
 	margin-top: 1rem;
 }
 
-.form {
-	margin-top: 5rem;
+.login, .register, .email {
+	margin-top: 2rem;
 }
 
 .footer-link {
